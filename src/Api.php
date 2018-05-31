@@ -7,12 +7,12 @@ class Api {
   /**
    * @var VerificationApi
    */
-  public $Verification;
+  public $verification;
 
   /**
    * @var TrustApi
    */
-  public $Trust;
+  public $trust;
 
   /**
    * Initialize Kickbox API
@@ -22,7 +22,7 @@ class Api {
   function __construct($apiKey) {
     $config = Configuration::getDefaultConfiguration()->setApiKey('apikey', $apiKey);
 
-    $this->Verification = new Api\VerificationApi(new \GuzzleHttp\Client(), $config);
-    $this->Trust = new Api\TrustApi(new \GuzzleHttp\Client(), $config);
+    $this->verification = new Api\VerificationApi(new \GuzzleHttp\Client(), $config);
+    $this->trust = new Api\TrustApi(new \GuzzleHttp\Client(), $config);
   }
 }
