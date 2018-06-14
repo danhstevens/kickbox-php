@@ -96,7 +96,11 @@ Check on the status of a batch verification job
 ### Usage
 
 ```php
-// TODO
+try {
+  $results = $kickbox->verification->verifyBatchStatus($jobId);
+} catch (Exception $e) {
+  // handle exception
+}
 ```
 
 ### Response
@@ -109,7 +113,11 @@ Check your verification credit balance
 ### Usage
 
 ```php
-// TODO
+try {
+  $results = $kickbox->verification->balance();
+} catch (Exception $e) {
+  // handle exception
+}
 ```
 
 ### Response
@@ -125,7 +133,11 @@ Check that the Trust token is real
 ### Usage
 
 ```php
-// TODO
+try {
+  $results = $kickbox->trust->validate($appId, $token, $email);
+} catch (Exception $e) {
+  // handle exception
+}
 ```
 
 - - - - 
