@@ -1,50 +1,38 @@
 <p align="center">
-  <img src="https://static.kickbox.io/kickbox_github.png" alt="Kickbox Email Verification Service">
+  <a href="https://kickbox.com"><img src="https://static.kickbox.io/kickbox_github.png" alt="Kickbox Email Verification Service"></a>
   <br>
 </p>
 
-# Email Verification Library for PHP
+# Email Verification & Confirmation Library for PHP
 
 [![Travis CI](https://travis-ci.org/kickboxio/kickbox-php.svg?branch=master)](https://travis-ci.org/kickboxio/kickbox-php)
 [![Downloads](https://img.shields.io/packagist/dt/kickbox/kickbox.svg?maxAge=3600)](https://packagist.org/packages/kickbox/kickbox)
 [![Packagist](https://img.shields.io/packagist/v/kickbox/kickbox.svg?maxAge=3600)](https://packagist.org/packages/kickbox/kickbox)
-[![Slack Status](http://slack.kickbox.io/badge.svg)](http://slack.kickbox.io)
+[![Slack Status](http://slack.kickbox.com/badge.svg)](http://slack.kickbox.com)
 
-Kickbox determines if an email address is not only valid, but associated with a actual user. Uses include:
-
-* Preventing users from creating accounts on your applications using fake, misspelled, or throw-away email addresses.
-* Reducing bounces by removing old, invalid, and low quality email addresses from your mailing lists.
-* Saving money and projecting your reputation by only sending to real email users.
+Our [Email Verification](https://kickbox.com/email-verification) API ensures you only send to real email addresses and prevents sending to invalid, mistyped, and disposable email addresses. The [Trust (Email Confirmation)](https://kickbox.com/trust) API is an email confirmation service that ensures your users own the email address they provide and prevents bots and malicious users from creating fake accounts.
 
 ## Getting Started
 
-To begin, hop over to [kickbox.io](http://kickbox.io) and create a free account. Once you've signed up and logged in, click on **API Settings** and then click **Add API Key**. Take note of the generated API Key - you'll need it to setup the client as explained below.
+To begin, hop over to [kickbox.com](https://kickbox.com) and create a free account. Once you've signed up and logged in, click on **API Settings** and then click **Add API Key**. Take note of the generated API Key - you'll need it to setup the client as explained below.
 
 ## Installation
 
-Make sure you have [composer](https://getcomposer.org) installed.
-
-Add the following to your composer.json
-
-```js
-{
-    "require": {
-        "kickbox/kickbox": "*"
-    }
-}
-```
-
-Update your dependencies
+You can install the bindings via [Composer](http://getcomposer.org/). Run the following command:
 
 ```bash
-$ php composer.phar update
+composer require kickbox/kickbox
 ```
 
-> This package follows the `PSR-0` convention names for its classes, which means you can easily integrate these classes loading in your own autoloader.
+To use the bindings, use Composer's [autoload](https://getcomposer.org/doc/01-basic-usage.md#autoloading):
+
+```php
+require_once('vendor/autoload.php');
+```
 
 #### Versions
 
-Works with [ 5.4 / 5.5 ]
+Works with PHP 5.5.0 and later
 
 ## Usage
 
