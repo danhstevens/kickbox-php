@@ -259,7 +259,7 @@ class TrustValidateResponse implements ModelInterface, ArrayAccess
     /**
      * Sets success
      *
-     * @param bool $success true if the API request did not result in any unexpected errors
+     * @param bool $success true if the API request did not result in any errors
      *
      * @return $this
      */

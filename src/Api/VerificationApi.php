@@ -307,11 +307,11 @@ class VerificationApi
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/json', 'application/json; charset=utf-8']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/json', 'application/json; charset=utf-8'],
                 []
             );
         }
@@ -623,11 +623,11 @@ class VerificationApi
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/json', 'application/json; charset=utf-8']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/json', 'application/json; charset=utf-8'],
                 []
             );
         }
@@ -943,11 +943,11 @@ class VerificationApi
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/json', 'application/json; charset=utf-8']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/json', 'application/json; charset=utf-8'],
                 ['text/csv']
             );
         }
@@ -1250,11 +1250,11 @@ class VerificationApi
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/json', 'application/json; charset=utf-8']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/json', 'application/json; charset=utf-8'],
                 []
             );
         }

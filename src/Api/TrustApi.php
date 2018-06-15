@@ -364,11 +364,11 @@ class TrustApi
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
+                ['application/json', 'application/json; charset=utf-8']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
+                ['application/json', 'application/json; charset=utf-8'],
                 ['application/x-www-form-urlencoded']
             );
         }
