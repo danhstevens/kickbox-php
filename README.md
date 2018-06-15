@@ -24,17 +24,17 @@ $kickbox = new Kickbox\Api('YOUR_API_KEY');
 - - - - 
 
 # Email Address Verification Methods
-* **[`verification.verify`](#verificationverify)** - Verify a single email address
-* **[`verification.verifyBatch`](#verificationverifybatch)** - Verify multiple email addresses (up to 1 million)
-* **[`verification.verifyBatchStatus`](#verificationverifybatchstatus)** - Check on the status of a batch verification job
-* **[`verification.balance`](#verificationbalance)** - Check your verification credit balance
+* **[`verification->verify`](#verificationverify)** - Verify a single email address
+* **[`verification->verifyBatch`](#verificationverifybatch)** - Verify multiple email addresses (up to 1 million)
+* **[`verification->verifyBatchStatus`](#verificationverifybatchstatus)** - Check on the status of a batch verification job
+* **[`verification->balance`](#verificationbalance)** - Check your verification credit balance
 
 # Trust Methods
-* **[`trust.validate`](#trustvalidate)** - Validate a user's Trust token
+* **[`trust->validate`](#trustvalidate)** - Validate a user's Trust token
 
 - - - - 
 
-## `verification.verify`
+## `verification->verify`
 Verify a single email address
 
 ### Usage
@@ -60,7 +60,7 @@ $results = $kickbox->verification->verify("test@exmample.com", 6000);
 
 See our [API Reference Documentation](https://docs.kickbox.com/v2.0/reference#section-response-values) for full response details.
 
-## `verification.verifyBatch`
+## `verification->verifyBatch`
 Verify multiple email addresses (up to 1 million)
 
 ### Usage
@@ -90,7 +90,7 @@ $results = $kickbox->verification->verifyBatch($emails, $callbackUrl, $filename)
 * **message** `string` - Additional information from the server
 * **success** `boolean` - _true_ if the API request did not result in any unexpected errors
 
-## `verification.verifyBatchStatus`
+## `verification->verifyBatchStatus`
 Check on the status of a batch verification job
 
 ### Usage
@@ -107,7 +107,7 @@ try {
 
 See our [API Reference Documentation](https://docs.kickbox.com/v2.0/reference#check-job-status) for full response details.
 
-## `verification.balance`
+## `verification->balance`
 Check your verification credit balance
 
 ### Usage
@@ -127,7 +127,7 @@ try {
 
 - - - - 
 
-## `trust.validate`
+## `trust->validate`
 Check that the Trust token is real
 
 ### Usage
