@@ -140,6 +140,12 @@ try {
 }
 ```
 
+#### Parameters
+
+* **appId** `string` - Find this on the `connect` page for your app. This is the same for both test and production modes.
+* **token** `string` - The token provided from the front-end library. See [Client Side Installation](https://docs.kickbox.com/docs/client-side-installation).
+* **email** `string` (optional) - The email of the user signing up. This is cross-referenced with the email used to generate the token, so this must be the same email address the user entered into your form.
+
 - - - - 
 
 ## License
