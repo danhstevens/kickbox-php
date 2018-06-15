@@ -24,13 +24,13 @@ $kickbox = new Kickbox\Api('YOUR_API_KEY');
 - - - - 
 
 # Email Address Verification Methods
-* **[`verification->verify`](#verificationverify)** - Verify a single email address
-* **[`verification->verifyBatch`](#verificationverifybatch)** - Verify multiple email addresses (up to 1 million)
-* **[`verification->verifyBatchStatus`](#verificationverifybatchstatus)** - Check on the status of a batch verification job
-* **[`verification->balance`](#verificationbalance)** - Check your verification credit balance
+* **[`verification->verify`](#verification-verify)** - Verify a single email address
+* **[`verification->verifyBatch`](#verification-verifybatch)** - Verify multiple email addresses (up to 1 million)
+* **[`verification->verifyBatchStatus`](#verification-verifybatchstatus)** - Check on the status of a batch verification job
+* **[`verification->balance`](#verification-balance)** - Check your verification credit balance
 
 # Trust Methods
-* **[`trust->validate`](#trustvalidate)** - Validate a user's Trust token
+* **[`trust->validate`](#trust-validate)** - Validate a user's Trust token
 
 - - - - 
 
